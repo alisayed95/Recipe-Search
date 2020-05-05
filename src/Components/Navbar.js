@@ -5,13 +5,15 @@ const Navbar = () => {
     const styles = {
         color :'white',
         backgroundColor : 'transparent',
-        textDecoration : 'none'
+        textDecoration : 'none',
+        fontFamily: 'Amatic SC',
+        fontSize : '3rem'
     }
     return ( 
 
         <nav>
             <Link style={styles} to='/'>
-            Recipe Search
+            Recipe Search - Search For Your Food
             </Link>
         </nav>
      );
