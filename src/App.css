@@ -5,9 +5,15 @@
   font-family: sans-serif;
 }
 body{
-  background-color: rgb(77, 95, 156);
-  background-image:
-    url(./foto.jpg);
+  background-color: var(--primaryColor);
+}
+body::before {
+  content: '';
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(./foto.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,16 +36,17 @@ form{
 }
 input{
   color: black;
-  background-color: transparent;
+  background-color: rgb(46, 46, 46,0.5);
   height: 2.5rem;
   border: none;
   margin-right: 2rem;
   font-size: 1.1rem;
   border-bottom: 3px solid var(--primaryColor) ;
-  color: var(--primaryColor);
+  color: white;
 }
 input::placeholder{
   text-align: center;
+  color: white;
 }
 button{
   color: aliceblue;
